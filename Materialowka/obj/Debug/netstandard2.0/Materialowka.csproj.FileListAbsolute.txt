@@ -1,0 +1,9 @@
+C:\Users\Mikul\source\repos\+\+\bin\Debug\netstandard2.0\Materialowka.deps.json
+C:\Users\Mikul\source\repos\+\+\bin\Debug\netstandard2.0\Materialowka.dll
+C:\Users\Mikul\source\repos\+\+\bin\Debug\netstandard2.0\Materialowka.pdb
+C:\Users\Mikul\source\repos\+\+\obj\Debug\netstandard2.0\Materialowka.csprojAssemblyReference.cache
+C:\Users\Mikul\source\repos\+\+\obj\Debug\netstandard2.0\Materialowka.AssemblyInfoInputs.cache
+C:\Users\Mikul\source\repos\+\+\obj\Debug\netstandard2.0\Materialowka.AssemblyInfo.cs
+C:\Users\Mikul\source\repos\+\+\obj\Debug\netstandard2.0\Materialowka.csproj.CoreCompileInputs.cache
+C:\Users\Mikul\source\repos\+\+\obj\Debug\netstandard2.0\Materialowka.dll
+C:\Users\Mikul\source\repos\+\+\obj\Debug\netstandard2.0\Materialowka.pdb
