@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Materialowka.OrderItem
 {
-    public interface IOrderItem
+    public interface IOrderItem<T>
     {
         string ItemName { get; set; }
+        T UniqueProperty { get; set; }
     }
 }

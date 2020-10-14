@@ -1,19 +1,36 @@
-﻿using System;
+﻿using Materialowka.OrderItem;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace Materialowka
 {
     public class Order : IOrder
     {
-        List<IOrderItem> _orderItemsList;
         public string OrderStreet { get; set; }
         public int OrderNumber { get; set; }
-        public DateTime OrderDay { get; set; }
+        public string OrderDay { get; set; }
+        public List<IOrderItem<object>> OrderItems { get; set; }
 
         public Order()
         {
-            this._orderItemsList.Add()
+            OrderDay = DateTime.Now.ToString(new CultureInfo("PL-pl"));
+        }
+
+        public void AddOrderItemToList(IOrderItem<object> orderItem)
+        {
+            OrderItems.Add(orderItem);
+        }
+
+        public void AddOrderStreet(string orderStreet)
+        {
+            OrderStreet = orderStreet;
+        }
+
+        public void AddOrderNumber(int orderNumber)
+        {
+            OrderNumber = orderNumber;
         }
     }
 }

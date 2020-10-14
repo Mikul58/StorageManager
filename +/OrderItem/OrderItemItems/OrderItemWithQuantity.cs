@@ -5,14 +5,14 @@ using System.Text;
 
 namespace Materialowka.OrderItem
 {
-    public class OrderItemWithQuantity : IOrderItemWithQuantity
+    public class OrderItemWithQuantity : IOrderItem<int>
     {
         public string ItemName { get; set; }
-        public int Quantity { get; set; }
-        public OrderItemWithQuantity(string itemName, int quantity)
+        public int UniqueProperty { get; set; }
+        public OrderItemWithQuantity(string itemName, int uniqueProperty)
         {
             ItemName = itemName;
-            Quantity = quantity;
+            UniqueProperty = uniqueProperty;
         }
     }
 }

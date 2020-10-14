@@ -4,14 +4,15 @@ using System.Text;
 
 namespace Materialowka.OrderItem
 {
-    public class OrderItemWithCheck : IOrderItemWithCheck
+    public class OrderItemWithCheck : IOrderItem<bool>
     {
         public string ItemName { get; set; }
-        public bool Check { get; set; }
-        public OrderItemWithCheck(string itemName, bool check)
+        public bool UniqueProperty { get; set; }
+
+        public OrderItemWithCheck(string itemName, bool uniqueProperty)
         {
             ItemName = itemName;
-            Check = check;
+            UniqueProperty = uniqueProperty;
         }
     }
 }
