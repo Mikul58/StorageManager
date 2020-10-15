@@ -1,17 +1,14 @@
 ﻿using System;
+using Materialowka.OrderItemFolder;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Materialowka.OrderItem
+namespace Materialowka
 {
     public interface IOrder
     {
-        string OrderStreet { get; set; }
-        int OrderNumber { get; set; }
-        string OrderDay { get; set; }
-        List<IOrderItem<object>> OrderItems { get; set; }
 
-        void AddOrderItemToList(IOrderItem<object> orderItem);
+        void AddOrderItemToList(string itemName, string keyParameter);
         public void AddOrderStreet(string orderStreet);
         public void AddOrderNumber(int orderNumber);
     }
